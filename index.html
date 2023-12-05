@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title>Katik - Kalkulator Matematika</title>
+  </head>
+  <body>
+    <div class="container" style="background-color: rgb(250, 250, 250)">
+      <div class="container-center">
+        <header class="tittle-top">
+          <h2>Welcome To Katik</h2>
+          <p>
+            Hai sobat, Selamat datang di Katik :]
+            <br />
+            Sebuah web apps sederhana untuk menghitung nilai luas dan keliling
+            bangun datar.
+          </p>
+          <nav class="content">
+            <button class="button-option" id="btnSegitiga" onclick="showContent('disSegitiga', 'btnSegitiga')">
+              Segitiga
+            </button>
+            <button class="button-option" id="btnJajargenjang" onclick="showContent('disJajargenjang', 'btnJajargenjang')">
+              Jajar Genjang
+            </button>
+          </nav>
+        </header>
+
+        <div class="content-hidden" style="display: none;" id="disSegitiga" >
+          <ul style="display: show;" id="optSegitiga">
+            <li onclick="showOptionSelected('slctdLuasSegitiga', 'optSegitiga')" >Luas Segitiga</li>
+            <li onclick="showOptionSelected('slctdKelilingSegitiga', 'optSegitiga')" >Keliling Segitiga</li>
+          </ul>
+
+          <div class="content-hidden-show" style="display: none;" id="slctdLuasSegitiga">
+            <div class="content-hidden-tittle" onclick="showOption('optSegitiga','slctdLuasSegitiga')">Luas Segitiga</div>
+            <div class="content-hidden-field">
+              <img class="image-content" src="./assets/segitigaLuas.jpg" alt="Rumus Luas Segitiga">
+              <br>
+              Untuk mencari luas dari sebuah <b>SEGITIGA</b> menggunakan rumus :
+              <br>
+              <br>
+              <b> Luas = ½ x Alas x Tinggi</b>
+              <br>
+              <hr>
+              <h3>Hitung Luas Segitiga</h3>
+              <section class="center">
+                <input type="number" id="segitiga-luas-alas" class="input-field" placeholder="Masukan alas segitiga ...">
+                <input type="number" id="segitiga-luas-tinggi" class="input-field" placeholder="Masukan tinggi segitiga ...">
+                <hr>
+                <div id="segitiga-luas-hasil"></div>
+                <hr>
+                <div style="margin : 5px;">
+                  <button class="button-calculate" onclick="calculate('segitiga-luas-hasil')">Hitung</button>
+                  <button class="button-reset" onclick="reset('segitiga-luas-hasil')">Reset</button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="content-hidden-show" style="display: none;" id="slctdKelilingSegitiga">
+            <div class="content-hidden-tittle" onclick="showOption('optSegitiga','slctdKelilingSegitiga')">Keliling Segitiga</div>
+            <div class="content-hidden-field">
+              <img class="image-content" src="./assets/segitigaKeliling.jpg" alt="Rumus Luas Segitiga">
+              <br>
+              Untuk mencari keliling dari sebuah <b>SEGITIGA</b> menggunakan rumus :
+              <br>
+              <br>
+              <b> Keliling = Sisi A + Sisi B + Sisi C</b>
+              <br>
+              <hr>
+              <h3>Hitung Keliling Segitiga</h3>
+              <section class="center">
+                <input type="number" id="segitiga-keliling-sisia" class="input-field" placeholder="Masukan panjang sisi A segitiga ...">
+                <input type="number" id="segitiga-keliling-sisib" class="input-field" placeholder="Masukan panjang sisi B segitiga ...">
+                <input type="number" id="segitiga-keliling-sisic" class="input-field" placeholder="Masukan panjang sisi C segitiga ...">
+                <hr>
+                <div id="segitiga-keliling-hasil"></div>
+                <hr>
+                <div style="margin : 5px;">
+                  <button class="button-calculate" onclick="calculate('segitiga-keliling-hasil')">Hitung</button>
+                  <button class="button-reset" onclick="reset('segitiga-keliling-hasil')">Reset</button>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="content-hidden" style="display: none;" id="disJajargenjang" >
+          <ul style="display: show;" id="optJajargenjang">
+            <li onclick="showOptionSelected('slctdLuasJajargenjang', 'optJajargenjang')" >Luas Jajargenjang</li>
+            <li onclick="showOptionSelected('slctdKelilingJajargenjang', 'optJajargenjang')" >Keliling Jajargenjang</li>
+          </ul>
+
+          <div class="content-hidden-show" style="display: none;" id="slctdLuasJajargenjang">
+            <div class="content-hidden-tittle" onclick="showOption('optJajargenjang','slctdLuasJajargenjang')">Luas Jajargenjang</div>
+            <div class="content-hidden-field">
+              <img class="image-content" src="./assets/jajargenjangLuas.jpg" alt="Rumus Luas Jajargenjang">
+              <br>
+              Untuk mencari luas dari sebuah <b>Jajargenjang</b> menggunakan rumus :
+              <br>
+              <br>
+              <b> Luas = Alas x Tinggi</b>
+              <br>
+              <hr>
+              <h3>Hitung Luas Jajargenjang</h3>
+              <section class="center">
+                <input type="number" id="jajargenjang-luas-alas" class="input-field" placeholder="Masukan alas jajargenjang ...">
+                <input type="number" id="jajargenjang-luas-tinggi" class="input-field" placeholder="Masukan tinggi jajargenjang ...">
+                <hr>
+                <div id="jajargenjang-luas-hasil"></div>
+                <hr>
+                <div style="margin : 5px;">
+                  <button class="button-calculate" onclick="calculate('jajargenjang-luas-hasil')">Hitung</button>
+                  <button class="button-reset" onclick="reset('jajargenjang-luas-hasil')">Reset</button>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="content-hidden-show" style="display: none;" id="slctdKelilingJajargenjang">
+            <div class="content-hidden-tittle" onclick="showOption('optJajargenjang','slctdKelilingJajargenjang')">Keliling Jajargenjang</div>
+            <div class="content-hidden-field">
+              <img class="image-content" src="./assets/jajargenjangKeliling.jpg" alt="Rumus Keliling Jajargenjang">
+              <br>
+              Untuk mencari keliling dari sebuah <b>JAJARGENJANG</b> menggunakan rumus :
+              <br>
+              <br>
+              <b> Keliling =( 2 x Sisi A ) + (2 x Sisi B)</b>
+              <br>
+              <hr>
+              <h3>Hitung Keliling Jajargenjang</h3>
+              <section class="center">
+                <input type="number" id="jajargenjang-keliling-sisia" class="input-field" placeholder="Masukan panjang sisi A jajargenjang ...">
+                <input type="number" id="jajargenjang-keliling-sisib" class="input-field" placeholder="Masukan panjang sisi B jajargenjang ...">
+                <hr>
+                <div id="jajargenjang-keliling-hasil"></div>
+                <hr>
+                <div style="margin : 5px;">
+                  <button class="button-calculate" onclick="calculate('jajargenjang-keliling-hasil')">Hitung</button>
+                  <button class="button-reset" onclick="reset('jajargenjang-keliling-hasil')">Reset</button>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="content-hidden" style="display: none;" id="disJajargenjang">
+          ini jajargenjang
+        </div>
+      
+      </div>
+    </div>
+  </body>
+</html>

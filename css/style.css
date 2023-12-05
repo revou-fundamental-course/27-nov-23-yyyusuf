@@ -1,0 +1,139 @@
+html, body {
+    margin-top: 0;
+    height:100%;
+}
+
+.container{
+    max-width: 800px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+    margin-top: 0;
+    height:100%;
+}
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tittle-top {
+    margin: 0;
+    width: 96%;
+}
+
+.content {
+    margin: 0;
+}
+
+.content-hidden {
+    margin: 10px;
+    width: 96%;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    width: 96%;
+    display:inline-flex;
+    margin: 0;
+}
+
+ul > li {
+    background-color: lightblue;
+    border-radius: 4px;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+ul > li:hover {
+    background-color: rgb(133, 191, 210);
+    font-weight: bold;
+}
+
+
+.content-hidden-tittle {
+    background-color:  rgb(117, 183, 205);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.image-content {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.button-option {
+    background-color: lightblue;
+    border: none;
+    display: block;
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.button-option:hover {
+    background-color: rgb(133, 191, 210);
+    font-weight: bold;
+}
+
+.button-option:focus {
+    background-color: rgb(117, 183, 205);
+    font-weight: bold;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    
+}
+
+.input-field {
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border-width: 1px;
+    text-align: center;
+}
+
+.button-calculate {
+    
+    background-color: rgb(87, 197, 87);
+    width:10%;
+    border: none;
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+.button-calculate:hover {
+    background-color: rgb(26, 181, 26);
+    font-weight: bold;
+}
+
+.button-reset {
+    background-color: rgb(255, 191, 73);
+    width:10%;
+    border: none;
+    padding: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+.button-reset:hover {
+    background-color: orange;
+    font-weight: bold;
+}
