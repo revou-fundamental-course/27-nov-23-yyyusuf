@@ -40,8 +40,8 @@ function calculate(data){
                 alert("Salah satu kolom belum diisi");
             }
             else{
-                var alas = parseInt(document.getElementById('segitiga-luas-alas').value);
-                var tinggi = parseInt(document.getElementById('segitiga-luas-tinggi').value);
+                var alas = parseFloat(document.getElementById('segitiga-luas-alas').value);
+                var tinggi = parseFloat(document.getElementById('segitiga-luas-tinggi').value);
                 var hasil = document.getElementById('segitiga-luas-hasil');
 
                 hasil.innerHTML = "Luas = ½ x Alas x Tinggi <br> Luas = ½ x "+ alas + " x " + tinggi + "<br> Luas = " + 
@@ -55,9 +55,9 @@ function calculate(data){
                 alert("Salah satu kolom belum diisi");
             }
             else{
-                var sisia = parseInt(document.getElementById('segitiga-keliling-sisia').value);
-                var sisib = parseInt(document.getElementById('segitiga-keliling-sisib').value);
-                var sisic = parseInt(document.getElementById('segitiga-keliling-sisic').value);
+                var sisia = parseFloat(document.getElementById('segitiga-keliling-sisia').value);
+                var sisib = parseFloat(document.getElementById('segitiga-keliling-sisib').value);
+                var sisic = parseFloat(document.getElementById('segitiga-keliling-sisic').value);
                 var hasil = document.getElementById('segitiga-keliling-hasil');
 
                 hasil.innerHTML = "Keliling = Sisi A + Sisi B + Sisi C <br> Keliling = "+ sisia + " + "+ sisib + " + " + sisic +
@@ -70,8 +70,8 @@ function calculate(data){
                 alert("Salah satu kolom belum diisi");
             }
             else{
-                var alas = parseInt(document.getElementById('jajargenjang-luas-alas').value);
-                var tinggi = parseInt(document.getElementById('jajargenjang-luas-tinggi').value);
+                var alas = parseFloat(document.getElementById('jajargenjang-luas-alas').value);
+                var tinggi = parseFloat(document.getElementById('jajargenjang-luas-tinggi').value);
                 var hasil = document.getElementById('jajargenjang-luas-hasil');
 
                 hasil.innerHTML = "Luas = Alas x Tinggi <br> Luas = "+ alas + " x " + tinggi + "<br> Luas = " + 
@@ -84,8 +84,8 @@ function calculate(data){
                 alert("Salah satu kolom belum diisi");
             }
             else{
-                var sisia = parseInt(document.getElementById('jajargenjang-keliling-sisia').value);
-                var sisib = parseInt(document.getElementById('jajargenjang-keliling-sisib').value);
+                var sisia = parseFloat(document.getElementById('jajargenjang-keliling-sisia').value);
+                var sisib = parseFloat(document.getElementById('jajargenjang-keliling-sisib').value);
                 var hasil = document.getElementById('jajargenjang-keliling-hasil');
 
                 hasil.innerHTML = "Keliling = ( 2 x Sisi A ) + (2 x Sisi B) <br> Keliling = ( 2 x "+ sisia + " ) + ( 2 x "+ sisib + " ) <br> Keliling = " + ((2*sisia) + (2*sisib)) ;
