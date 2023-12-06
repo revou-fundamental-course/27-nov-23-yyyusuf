@@ -68,7 +68,10 @@ ul > li:hover {
 }
 
 .image-content {
-    border-radius: 8px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
     max-width: 300px;
 }
 
@@ -112,7 +115,8 @@ ul > li:hover {
 .button-calculate {
     
     background-color: rgb(87, 197, 87);
-    width:10%;
+    width:20%;
+    min-width: 50px;
     border: none;
     padding: 4px;
     margin-top: 4px;
@@ -126,7 +130,8 @@ ul > li:hover {
 
 .button-reset {
     background-color: rgb(255, 191, 73);
-    width:10%;
+    width:20%;
+    min-width: 50px;
     border: none;
     padding: 4px;
     margin-top: 4px;
@@ -136,4 +141,26 @@ ul > li:hover {
 .button-reset:hover {
     background-color: orange;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+
+body {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+ul, ol {
+    font-size: 1.5rem;
+    line-height: 1.7;
+   }
+
+div {
+    font-size: 1.5rem;
+}
+
+
 }

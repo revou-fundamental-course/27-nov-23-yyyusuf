@@ -79,7 +79,7 @@
                 <hr>
                 <div id="segitiga-keliling-hasil"></div>
                 <hr>
-                <div style="margin : 5px;">
+                <div style="display: flex; margin : 5px;">
                   <button class="button-calculate" onclick="calculate('segitiga-keliling-hasil')">Hitung</button>
                   <button class="button-reset" onclick="reset('segitiga-keliling-hasil')">Reset</button>
                 </div>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="content-hidden" style="display: none;" id="disJajargenjang" >
-          <ul style="display: show;" id="optJajargenjang">
+          <ul style="display: inline-flex;" id="optJajargenjang">
             <li onclick="showOptionSelected('slctdLuasJajargenjang', 'optJajargenjang')" >Luas Jajargenjang</li>
             <li onclick="showOptionSelected('slctdKelilingJajargenjang', 'optJajargenjang')" >Keliling Jajargenjang</li>
           </ul>
