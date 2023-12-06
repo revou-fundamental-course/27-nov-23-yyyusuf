@@ -33,7 +33,7 @@ function showOption(data, parent) {
 }
 
 function calculate(data){
-    console.log(document.getElementById('segitiga-luas-alas').value);
+
     switch(data){
         case "segitiga-luas-hasil":
             if(document.getElementById('segitiga-luas-alas').value == "" || document.getElementById('segitiga-luas-tinggi').value == ""){
